@@ -22,38 +22,57 @@ import sys
 newfile = open("radtags_ustacks_3-6.sh", "w")	#create a new file where the ustacks code will go
 newfile.write("#!/bin/bash\n")
 
-raw_data = "" # path to raw data files
+
+
+raw_data = "/media/mfisher5/New\ Volume/Kristen/Data/" # path to raw data files
 
 newfile.write("cd /mnt/hgfs/Shared\ Drive\ D/Pacific\ cod/DataAnalysis"+"\n")
-newfile.write("\n\nprocess_radtags -p " + raw_data + " -i gzfastq -y gzfastq -o PCod-US-repo/samplesT142 -b PCod-US-repo/scripts/barcodes.txt -e sbfI -E phred33 -r -c -q -t 142\n\n") 
 
+
+# radtags lane 1
+newfile.write("\n# lane 1\n")
+newfile.write("\n\nprocess_radtags -p " + raw_data + "KOD03 -i gzfastq -y gzfastq -o PCod-US-repo/samplesT142 -b PCod-US-repo/scripts/barcodesL1.txt -e sbfI -E phred33 -r -c -q -t 142\n\n") 
+
+# radtags lane 2
+newfile.write("\n# lane 2\n")
+newfile.write("\n\nprocess_radtags -p " + raw_data + "AD06 -i gzfastq -y gzfastq -o PCod-US-repo/samplesT142 -b PCod-US-repo/scripts/barcodesL2_AD.txt -e sbfI -E phred33 -r -c -q -t 142\n\n") 
+newfile.write("\n\nprocess_radtags -p " + raw_data + "WC05 -i gzfastq -y gzfastq -o PCod-US-repo/samplesT142 -b PCod-US-repo/scripts/barcodesL2_WC.txt -e sbfI -E phred33 -r -c -q -t 142\n\n") 
+
+# radtags lane 3
+newfile.write("\n# lane 3\n")
+newfile.write("\n\nprocess_radtags -p " + raw_data + "HS04 -i gzfastq -y gzfastq -o PCod-US-repo/samplesT142 -b PCod-US-repo/scripts/barcodesL3_HS04.txt -e sbfI -E phred33 -r -c -q -t 142\n\n") 
+newfile.write("\n\nprocess_radtags -p " + raw_data + "PI04 -i gzfastq -y gzfastq -o PCod-US-repo/samplesT142 -b PCod-US-repo/scripts/barcodesL3_PI04.txt -e sbfI -E phred33 -r -c -q -t 142\n\n") 
+
+
+# radtags lane 4
+newfile.write("\n# lane 4\n")
+newfile.write("\n\nprocess_radtags -p " + raw_data + "PS12 -i gzfastq -y gzfastq -o PCod-US-repo/samplesT142 -b PCod-US-repo/scripts/barcodesL4_PS12.txt -e sbfI -E phred33 -r -c -q -t 142\n\n") 
+newfile.write("\n\nprocess_radtags -p " + raw_data + "PWS12_GS13 -i gzfastq -y gzfastq -o PCod-US-repo/samplesT142 -b PCod-US-repo/scripts/barcodesL4_PWS12_GS13.txt -e sbfI -E phred33 -r -c -q -t 142\n\n") 
+
+# radtags lane 5
+newfile.write("\n# lane 5\n")
+newfile.write("\n\nprocess_radtags -p " + raw_data + "UP03 -i gzfastq -y gzfastq -o PCod-US-repo/samplesT142 -b PCod-US-repo/scripts/barcodesL5.txt -e sbfI -E phred33 -r -c -q -t 142\n\n") 
+
+
+#### check fastqc after process_radtags
 newfile.write("echo 'Check several of the files with FASTQC. Are they trimmed to the correct length? [yes/no]'\nread ANSWER\nif[$ANSWER == 'no']; then\n\texit 1\nfi\n\n")
 
 
-
-#Take the two input files and make a master list of sample names, including adding ".1" to the end of the paired end samples. 
-samplefile = open("L1L2_sampleList.txt", "w")
-
-
 #=== Lane 1: forward sequences of paired end
-myfile = open(sys.argv[1], "r")
-for line in myfile: 			#for each line in the barcode file	
-	linelist=line.strip().split()	
-	sampID = linelist[1] + ".1" 		#save the third object as "sampID"
-	samplefile.write(sampID + "\n")
-myfile.close()
-#=== Lane 2: single read
-myfile2 = open(sys.argv[2], "r")
-for line in myfile2: 			#for each line in the barcode file	
-	linelist=line.strip().split()	 	
-	samplefile.write(linelist[1] + "\n")
-myfile2.close()	
+samplefile = open("sampleList.txt", "w") #create a new file for the list of all samples
+n_files = len(sys)
+for i in seq(1:n_files):
+	bar_file = open(sys.argv[i], "r")
+	for line in bar_file: 
+		linelist=line.strip().split()	 	
+		samplefile.write(linelist[1] + "\n")
+	bar_file.close()
 samplefile.close()
 
 
 #ustacks 
 newfile.write("\n"+"#ustacks"+"\n")
-samplefile = open("L1L2_sampleList.txt", "r")
+samplefile = open("sampleList.txt", "r")
 
 ID_int = 1
 for line in samplefile: 			#for each line in the barcode file	
@@ -72,7 +91,7 @@ samplefile.close()
 
 
 #count sequences in each fastq file
-samplefile = open("L1L2_sampleList.txt", "r")
+samplefile = open("sampleList.txt", "r")
 newfile.write("\n\n")
 for line in samplefile: 
 	sampID = line.strip()	

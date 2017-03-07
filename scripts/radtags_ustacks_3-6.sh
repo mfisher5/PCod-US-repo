@@ -317,143 +317,95 @@ ustacks -t gzfastq -f ../samplesT142/PS12_018.fq.gz -r -d -o ../stacks -i 285 -m
 ustacks -t gzfastq -f ../samplesT142/PS12_035.fq.gz -r -d -o ../stacks -i 286 -m 10 -M 3 -p 6 --model_type bounded
 ustacks -t gzfastq -f ../samplesT142/PS12_005.fq.gz -r -d -o ../stacks -i 287 -m 10 -M 3 -p 6 --model_type bounded
 ustacks -t gzfastq -f ../samplesT142/PS12_009.fq.gz -r -d -o ../stacks -i 288 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_008.fq.gz -r -d -o ../stacks -i 289 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_048.fq.gz -r -d -o ../stacks -i 290 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_031.fq.gz -r -d -o ../stacks -i 291 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_036.fq.gz -r -d -o ../stacks -i 292 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_030.fq.gz -r -d -o ../stacks -i 293 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_006.fq.gz -r -d -o ../stacks -i 294 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_016.fq.gz -r -d -o ../stacks -i 295 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_033.fq.gz -r -d -o ../stacks -i 296 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_015.fq.gz -r -d -o ../stacks -i 297 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_014.fq.gz -r -d -o ../stacks -i 298 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_044.fq.gz -r -d -o ../stacks -i 299 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_037.fq.gz -r -d -o ../stacks -i 300 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_004.fq.gz -r -d -o ../stacks -i 301 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_040.fq.gz -r -d -o ../stacks -i 302 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_023.fq.gz -r -d -o ../stacks -i 303 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_042.fq.gz -r -d -o ../stacks -i 304 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_024.fq.gz -r -d -o ../stacks -i 305 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_034.fq.gz -r -d -o ../stacks -i 306 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_003.fq.gz -r -d -o ../stacks -i 307 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_002.fq.gz -r -d -o ../stacks -i 308 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_001.fq.gz -r -d -o ../stacks -i 309 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_041.fq.gz -r -d -o ../stacks -i 310 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_013.fq.gz -r -d -o ../stacks -i 311 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_027.fq.gz -r -d -o ../stacks -i 312 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_039.fq.gz -r -d -o ../stacks -i 313 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_020.fq.gz -r -d -o ../stacks -i 314 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_012.fq.gz -r -d -o ../stacks -i 315 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_029.fq.gz -r -d -o ../stacks -i 316 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_022.fq.gz -r -d -o ../stacks -i 317 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_007.fq.gz -r -d -o ../stacks -i 318 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_046.fq.gz -r -d -o ../stacks -i 319 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_043.fq.gz -r -d -o ../stacks -i 320 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_045.fq.gz -r -d -o ../stacks -i 321 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_011.fq.gz -r -d -o ../stacks -i 322 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_028.fq.gz -r -d -o ../stacks -i 323 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_021.fq.gz -r -d -o ../stacks -i 324 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_026.fq.gz -r -d -o ../stacks -i 325 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_010.fq.gz -r -d -o ../stacks -i 326 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_025.fq.gz -r -d -o ../stacks -i 327 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_019.fq.gz -r -d -o ../stacks -i 328 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_038.fq.gz -r -d -o ../stacks -i 329 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_017.fq.gz -r -d -o ../stacks -i 330 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_047.fq.gz -r -d -o ../stacks -i 331 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_032.fq.gz -r -d -o ../stacks -i 332 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_018.fq.gz -r -d -o ../stacks -i 333 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_035.fq.gz -r -d -o ../stacks -i 334 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_005.fq.gz -r -d -o ../stacks -i 335 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PS12_009.fq.gz -r -d -o ../stacks -i 336 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/GS13_001.fq.gz -r -d -o ../stacks -i 337 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/GS13_002.fq.gz -r -d -o ../stacks -i 338 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/GS13_003.fq.gz -r -d -o ../stacks -i 339 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/GS13_004.fq.gz -r -d -o ../stacks -i 340 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/GS13_005.fq.gz -r -d -o ../stacks -i 341 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/GS13_006.fq.gz -r -d -o ../stacks -i 342 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/GS13_007.fq.gz -r -d -o ../stacks -i 343 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/GS13_008.fq.gz -r -d -o ../stacks -i 344 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/GS13_009.fq.gz -r -d -o ../stacks -i 345 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/GS13_010.fq.gz -r -d -o ../stacks -i 346 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/GS13_011.fq.gz -r -d -o ../stacks -i 347 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/GS13_012.fq.gz -r -d -o ../stacks -i 348 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/GS13_013.fq.gz -r -d -o ../stacks -i 349 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/GS13_014.fq.gz -r -d -o ../stacks -i 350 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/GS13_015.fq.gz -r -d -o ../stacks -i 351 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/GS13_016.fq.gz -r -d -o ../stacks -i 352 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/GS13_017.fq.gz -r -d -o ../stacks -i 353 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PWS12_002.fq.gz -r -d -o ../stacks -i 354 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PWS12_003.fq.gz -r -d -o ../stacks -i 355 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PWS12_005.fq.gz -r -d -o ../stacks -i 356 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PWS12_006.fq.gz -r -d -o ../stacks -i 357 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PWS12_009.fq.gz -r -d -o ../stacks -i 358 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PWS12_010.fq.gz -r -d -o ../stacks -i 359 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PWS12_011.fq.gz -r -d -o ../stacks -i 360 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PWS12_014.fq.gz -r -d -o ../stacks -i 361 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PWS12_015.fq.gz -r -d -o ../stacks -i 362 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PWS12_016.fq.gz -r -d -o ../stacks -i 363 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PWS12_017.fq.gz -r -d -o ../stacks -i 364 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PWS12_018.fq.gz -r -d -o ../stacks -i 365 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PWS12_021.fq.gz -r -d -o ../stacks -i 366 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PWS12_022.fq.gz -r -d -o ../stacks -i 367 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PWS12_023.fq.gz -r -d -o ../stacks -i 368 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PWS12_063.fq.gz -r -d -o ../stacks -i 369 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PWS12_075.fq.gz -r -d -o ../stacks -i 370 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PWS12_079.fq.gz -r -d -o ../stacks -i 371 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PWS12_094.fq.gz -r -d -o ../stacks -i 372 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PWS12_095.fq.gz -r -d -o ../stacks -i 373 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PWS12_096.fq.gz -r -d -o ../stacks -i 374 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PWS12_097.fq.gz -r -d -o ../stacks -i 375 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PWS12_131.fq.gz -r -d -o ../stacks -i 376 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/PWS12_133.fq.gz -r -d -o ../stacks -i 377 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_001.fq.gz -r -d -o ../stacks -i 378 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_009.fq.gz -r -d -o ../stacks -i 379 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_017.fq.gz -r -d -o ../stacks -i 380 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_025.fq.gz -r -d -o ../stacks -i 381 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_033.fq.gz -r -d -o ../stacks -i 382 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_041.fq.gz -r -d -o ../stacks -i 383 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_002.fq.gz -r -d -o ../stacks -i 384 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_010.fq.gz -r -d -o ../stacks -i 385 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_018.fq.gz -r -d -o ../stacks -i 386 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_026.fq.gz -r -d -o ../stacks -i 387 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_034.fq.gz -r -d -o ../stacks -i 388 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_042.fq.gz -r -d -o ../stacks -i 389 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_003.fq.gz -r -d -o ../stacks -i 390 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_011.fq.gz -r -d -o ../stacks -i 391 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_019.fq.gz -r -d -o ../stacks -i 392 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_027.fq.gz -r -d -o ../stacks -i 393 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_035.fq.gz -r -d -o ../stacks -i 394 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_043.fq.gz -r -d -o ../stacks -i 395 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_004.fq.gz -r -d -o ../stacks -i 396 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_012.fq.gz -r -d -o ../stacks -i 397 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_020.fq.gz -r -d -o ../stacks -i 398 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_028.fq.gz -r -d -o ../stacks -i 399 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_036.fq.gz -r -d -o ../stacks -i 400 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_044.fq.gz -r -d -o ../stacks -i 401 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_005.fq.gz -r -d -o ../stacks -i 402 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_013.fq.gz -r -d -o ../stacks -i 403 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_021.fq.gz -r -d -o ../stacks -i 404 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_029.fq.gz -r -d -o ../stacks -i 405 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_037.fq.gz -r -d -o ../stacks -i 406 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_045.fq.gz -r -d -o ../stacks -i 407 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_006.fq.gz -r -d -o ../stacks -i 408 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_014.fq.gz -r -d -o ../stacks -i 409 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_022.fq.gz -r -d -o ../stacks -i 410 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_030.fq.gz -r -d -o ../stacks -i 411 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_038.fq.gz -r -d -o ../stacks -i 412 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_046.fq.gz -r -d -o ../stacks -i 413 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_007.fq.gz -r -d -o ../stacks -i 414 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_015.fq.gz -r -d -o ../stacks -i 415 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_023.fq.gz -r -d -o ../stacks -i 416 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_031.fq.gz -r -d -o ../stacks -i 417 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_039.fq.gz -r -d -o ../stacks -i 418 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_047.fq.gz -r -d -o ../stacks -i 419 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_008.fq.gz -r -d -o ../stacks -i 420 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_016.fq.gz -r -d -o ../stacks -i 421 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_024.fq.gz -r -d -o ../stacks -i 422 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_032.fq.gz -r -d -o ../stacks -i 423 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_040.fq.gz -r -d -o ../stacks -i 424 -m 10 -M 3 -p 6 --model_type bounded
-ustacks -t gzfastq -f ../samplesT142/UP03_048.fq.gz -r -d -o ../stacks -i 425 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/GS13_001.fq.gz -r -d -o ../stacks -i 289 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/GS13_002.fq.gz -r -d -o ../stacks -i 290 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/GS13_003.fq.gz -r -d -o ../stacks -i 291 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/GS13_004.fq.gz -r -d -o ../stacks -i 292 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/GS13_005.fq.gz -r -d -o ../stacks -i 293 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/GS13_006.fq.gz -r -d -o ../stacks -i 294 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/GS13_007.fq.gz -r -d -o ../stacks -i 295 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/GS13_008.fq.gz -r -d -o ../stacks -i 296 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/GS13_009.fq.gz -r -d -o ../stacks -i 297 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/GS13_010.fq.gz -r -d -o ../stacks -i 298 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/GS13_011.fq.gz -r -d -o ../stacks -i 299 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/GS13_012.fq.gz -r -d -o ../stacks -i 300 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/GS13_013.fq.gz -r -d -o ../stacks -i 301 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/GS13_014.fq.gz -r -d -o ../stacks -i 302 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/GS13_015.fq.gz -r -d -o ../stacks -i 303 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/GS13_016.fq.gz -r -d -o ../stacks -i 304 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/GS13_017.fq.gz -r -d -o ../stacks -i 305 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/PWS12_002.fq.gz -r -d -o ../stacks -i 306 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/PWS12_003.fq.gz -r -d -o ../stacks -i 307 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/PWS12_005.fq.gz -r -d -o ../stacks -i 308 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/PWS12_006.fq.gz -r -d -o ../stacks -i 309 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/PWS12_009.fq.gz -r -d -o ../stacks -i 310 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/PWS12_010.fq.gz -r -d -o ../stacks -i 311 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/PWS12_011.fq.gz -r -d -o ../stacks -i 312 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/PWS12_014.fq.gz -r -d -o ../stacks -i 313 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/PWS12_015.fq.gz -r -d -o ../stacks -i 314 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/PWS12_016.fq.gz -r -d -o ../stacks -i 315 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/PWS12_017.fq.gz -r -d -o ../stacks -i 316 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/PWS12_018.fq.gz -r -d -o ../stacks -i 317 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/PWS12_021.fq.gz -r -d -o ../stacks -i 318 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/PWS12_022.fq.gz -r -d -o ../stacks -i 319 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/PWS12_023.fq.gz -r -d -o ../stacks -i 320 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/PWS12_063.fq.gz -r -d -o ../stacks -i 321 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/PWS12_075.fq.gz -r -d -o ../stacks -i 322 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/PWS12_079.fq.gz -r -d -o ../stacks -i 323 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/PWS12_094.fq.gz -r -d -o ../stacks -i 324 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/PWS12_095.fq.gz -r -d -o ../stacks -i 325 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/PWS12_096.fq.gz -r -d -o ../stacks -i 326 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/PWS12_097.fq.gz -r -d -o ../stacks -i 327 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/PWS12_131.fq.gz -r -d -o ../stacks -i 328 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/PWS12_133.fq.gz -r -d -o ../stacks -i 329 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_001.fq.gz -r -d -o ../stacks -i 330 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_009.fq.gz -r -d -o ../stacks -i 331 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_017.fq.gz -r -d -o ../stacks -i 332 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_025.fq.gz -r -d -o ../stacks -i 333 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_033.fq.gz -r -d -o ../stacks -i 334 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_041.fq.gz -r -d -o ../stacks -i 335 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_002.fq.gz -r -d -o ../stacks -i 336 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_010.fq.gz -r -d -o ../stacks -i 337 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_018.fq.gz -r -d -o ../stacks -i 338 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_026.fq.gz -r -d -o ../stacks -i 339 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_034.fq.gz -r -d -o ../stacks -i 340 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_042.fq.gz -r -d -o ../stacks -i 341 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_003.fq.gz -r -d -o ../stacks -i 342 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_011.fq.gz -r -d -o ../stacks -i 343 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_019.fq.gz -r -d -o ../stacks -i 344 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_027.fq.gz -r -d -o ../stacks -i 345 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_035.fq.gz -r -d -o ../stacks -i 346 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_043.fq.gz -r -d -o ../stacks -i 347 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_004.fq.gz -r -d -o ../stacks -i 348 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_012.fq.gz -r -d -o ../stacks -i 349 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_020.fq.gz -r -d -o ../stacks -i 350 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_028.fq.gz -r -d -o ../stacks -i 351 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_036.fq.gz -r -d -o ../stacks -i 352 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_044.fq.gz -r -d -o ../stacks -i 353 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_005.fq.gz -r -d -o ../stacks -i 354 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_013.fq.gz -r -d -o ../stacks -i 355 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_021.fq.gz -r -d -o ../stacks -i 356 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_029.fq.gz -r -d -o ../stacks -i 357 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_037.fq.gz -r -d -o ../stacks -i 358 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_045.fq.gz -r -d -o ../stacks -i 359 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_006.fq.gz -r -d -o ../stacks -i 360 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_014.fq.gz -r -d -o ../stacks -i 361 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_022.fq.gz -r -d -o ../stacks -i 362 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_030.fq.gz -r -d -o ../stacks -i 363 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_038.fq.gz -r -d -o ../stacks -i 364 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_046.fq.gz -r -d -o ../stacks -i 365 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_007.fq.gz -r -d -o ../stacks -i 366 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_015.fq.gz -r -d -o ../stacks -i 367 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_023.fq.gz -r -d -o ../stacks -i 368 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_031.fq.gz -r -d -o ../stacks -i 369 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_039.fq.gz -r -d -o ../stacks -i 370 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_047.fq.gz -r -d -o ../stacks -i 371 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_008.fq.gz -r -d -o ../stacks -i 372 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_016.fq.gz -r -d -o ../stacks -i 373 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_024.fq.gz -r -d -o ../stacks -i 374 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_032.fq.gz -r -d -o ../stacks -i 375 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_040.fq.gz -r -d -o ../stacks -i 376 -m 10 -M 3 -p 6 --model_type bounded
+ustacks -t gzfastq -f ../samplesT142/UP03_048.fq.gz -r -d -o ../stacks -i 377 -m 10 -M 3 -p 6 --model_type bounded
 
 
 
@@ -936,102 +888,6 @@ zcat ../samplesT142/PI04_046.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[re
 zcat ../samplesT142/PI04_047.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
 
 zcat ../samplesT142/PI04_048.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_008.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_048.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_031.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_036.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_030.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_006.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_016.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_033.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_015.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_014.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_044.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_037.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_004.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_040.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_023.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_042.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_024.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_034.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_003.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_002.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_001.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_041.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_013.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_027.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_039.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_020.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_012.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_029.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_022.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_007.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_046.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_043.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_045.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_011.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_028.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_021.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_026.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_010.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_025.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_019.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_038.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_017.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_047.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_032.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_018.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_035.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_005.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
-
-zcat ../samplesT142/PS12_009.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
 
 zcat ../samplesT142/PS12_008.fq.gz | awk '((NR-2)%4==0){read=$1;total++;count[read]++}END{for(read in count){if(!max||count[read]>max) {max=count[read];maxRead=read};if(count[read]==1){unique++}};print total}' >> FastQsequenceCounts.txt
 

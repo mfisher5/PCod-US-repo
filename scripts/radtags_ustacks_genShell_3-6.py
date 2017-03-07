@@ -58,7 +58,7 @@ newfile.write("echo 'Check several of the files with FASTQC. Are they trimmed to
 
 #=== Lane 1: forward sequences of paired end
 samplefile = open("sampleList.txt", "w") #create a new file for the list of all samples
-file_list = ["barcodesL1.txt", "barcodesL2_AD.txt", "barcodesL2_WC.txt", "barcodesL2_AD.txt", "barcodesL3_HS.txt", "barcodesL3_PI.txt", "barcodesL4_PS.txt", "barcodesL4_PWSGS.txt", "barcodesL5.txt"]
+file_list = ["barcodesL1.txt", "barcodesL2_AD.txt", "barcodesL2_WC.txt", "barcodesL3_HS.txt", "barcodesL3_PI.txt", "barcodesL4_PS.txt", "barcodesL4_PWSGS.txt", "barcodesL5.txt"]
 for bar_file in file_list:
 	myfile = open(bar_file, "r")
 	for line in myfile: 

@@ -64,6 +64,7 @@ for bar_file in file_list:
 	for line in myfile: 
 		linelist=line.strip().split()	 	
 		samplefile.write(linelist[1] + "\n")
+	print "Done with barcodes in file ", myfile
 	myfile.close()
 samplefile.close()
 

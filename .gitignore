@@ -1,0 +1,4 @@
+samplesT142/*.fq.gz
+samplesT142/*.fq
+stacks/*.tsv.gz
+stacks/*.tsv

@@ -5,7 +5,8 @@
 ## Adapted from Korea cod scripts - uses (1) bounded SNP model, (2) stack depth (m) of 10, and (3) M of 3
 
 ##############
-## At the command line: python radtags_ustacks_genShellSR.py
+## At the command line: python radtags_ustacks_genShellSR.py ARG 1
+#Arg 1 = trim length 
 
 ## To change within the script: 
 #(1) trim file length
@@ -17,46 +18,50 @@
 ###########################################################################
 
 
-
-newfile = open("radtags_ustacks_3-6.sh", "w")	#create a new file where the ustacks code will go
+#open new shell script and initiate
+newfile = open("radtags_ustacks_3-6.sh", "w")	
 newfile.write("#!/bin/bash\n")
 
+#assign first argument as the trim length
+import sys
+TRIM = sys.argv[1]
 
 
-raw_data = "/media/mfisher5/New\ Volume/Kristen/Data/" # path to raw data files
+#create path to raw data files
+raw_data = "/media/mfisher5/New\ Volume/Kristen/Data/"
 
 
 
 # radtags lane 1
 newfile.write("\n# lane 1\n")
-newfile.write("process_radtags -p " + raw_data + "KOD03 -i gzfastq -y gzfastq -o ../samplesT142 -b barcodesL1.txt -e sbfI -E phred33 -r -c -q -t 142\n\n") 
+newfile.write("process_radtags -p " + raw_data + "KOD03 -i gzfastq -y gzfastq -o ../samplesT142 -b barcodesL1.txt -e sbfI -E phred33 -r -c -q -t " + TRIM +" \n\n") 
 
 # radtags lane 2
 newfile.write("# lane 2\n")
-newfile.write("process_radtags -p " + raw_data + "AD06 -i gzfastq -y gzfastq -o ../samplesT142 -b barcodesL2_AD.txt -e sbfI -E phred33 -r -c -q -t 142\n\n") 
-newfile.write("process_radtags -p " + raw_data + "WC05 -i gzfastq -y gzfastq -o ../samplesT142 -b barcodesL2_WC.txt -e sbfI -E phred33 -r -c -q -t 142\n\n") 
+newfile.write("process_radtags -p " + raw_data + "AD06 -i gzfastq -y gzfastq -o ../samplesT142 -b barcodesL2_AD.txt -e sbfI -E phred33 -r -c -q -t " + TRIM +" \n\n") 
+newfile.write("process_radtags -p " + raw_data + "WC05 -i gzfastq -y gzfastq -o ../samplesT142 -b barcodesL2_WC.txt -e sbfI -E phred33 -r -c -q -t " + TRIM +" \n\n") 
 
 # radtags lane 3
 newfile.write("# lane 3\n")
-newfile.write("process_radtags -p " + raw_data + "HS04 -i gzfastq -y gzfastq -o ../samplesT142 -b barcodesL3_HS.txt -e sbfI -E phred33 -r -c -q -t 142\n\n") 
-newfile.write("process_radtags -p " + raw_data + "PI04 -i gzfastq -y gzfastq -o ../samplesT142 -b barcodesL3_PI.txt -e sbfI -E phred33 -r -c -q -t 142\n\n") 
+newfile.write("process_radtags -p " + raw_data + "HS04 -i gzfastq -y gzfastq -o ../samplesT142 -b barcodesL3_HS.txt -e sbfI -E phred33 -r -c -q -t " + TRIM +" \n\n") 
+newfile.write("process_radtags -p " + raw_data + "PI04 -i gzfastq -y gzfastq -o ../samplesT142 -b barcodesL3_PI.txt -e sbfI -E phred33 -r -c -q -t " + TRIM +" \n\n") 
 
 
 # radtags lane 4
 newfile.write("# lane 4\n")
-newfile.write("process_radtags -p " + raw_data + "PS12 -i gzfastq -y gzfastq -o ../samplesT142 -b barcodesL4_PS.txt -e sbfI -E phred33 -r -c -q -t 142\n\n") 
-newfile.write("process_radtags -p " + raw_data + "PWS12_GS13 -i gzfastq -y gzfastq -o ../samplesT142 -b barcodesL4_PWSGS.txt -e sbfI -E phred33 -r -c -q -t 142\n\n") 
+newfile.write("process_radtags -p " + raw_data + "PS12 -i gzfastq -y gzfastq -o ../samplesT142 -b barcodesL4_PS.txt -e sbfI -E phred33 -r -c -q -t " + TRIM +" \n\n") 
+newfile.write("process_radtags -p " + raw_data + "PWS12_GS13 -i gzfastq -y gzfastq -o ../samplesT142 -b barcodesL4_PWSGS.txt -e sbfI -E phred33 -r -c -q -t " + TRIM +" \n\n") 
 
 # radtags lane 5
 newfile.write("# lane 5\n")
-newfile.write("process_radtags -p " + raw_data + "UP03 -i gzfastq -y gzfastq -o ../samplesT142 -b barcodesL5.txt -e sbfI -E phred33 -r -c -q -t 142\n\n") 
+newfile.write("process_radtags -p " + raw_data + "UP03 -i gzfastq -y gzfastq -o ../samplesT142 -b barcodesL5.txt -e sbfI -E phred33 -r -c -q -t " + TRIM +" \n\n") 
 
 
 #### check fastqc after process_radtags
-newfile.write("echo 'Check several of the files with FASTQC. Are they trimmed to the correct length? [yes/no]'\nread ANSWER\nif[$ANSWER == 'no']; then\n\texit 1\nfi\n\n")
+newfile.write("echo 'Check several of the files with FASTQC. Are they trimmed to the correct length? [yes/no]'\nread ANSWER\nif [$ANSWER == 'no']; then\n\texit 1\nfi\n\n")
 
 
-#=== Lane 1: forward sequences of paired end
+#create sample list file using barcode files (single read)
 samplefile = open("sampleList.txt", "w") #create a new file for the list of all samples
 file_list = ["barcodesL1.txt", "barcodesL2_AD.txt", "barcodesL2_WC.txt", "barcodesL3_HS.txt", "barcodesL3_PI.txt", "barcodesL4_PS.txt", "barcodesL4_PWSGS.txt", "barcodesL5.txt"]
 for bar_file in file_list:

@@ -19,6 +19,7 @@ catfilename = sys.argv[1]
 
 sampfilename = sys.argv[2]
 
+newfile = open("cstacks_populations_3-8.sh", "w")
 
 #cstacks
 newfile.write("\n"+"#cstacks"+"\n")
@@ -48,7 +49,7 @@ samplefile = open(sampfilename, "r")
 
 for line in samplefile: 			#for each line in the barcode file
 	linelist=line.strip().split()
-	newstring = "sstacks -b 3 -c ../stacks/batch_1 -s ../stacks/" + linelist[0] + " -o ../stacks -p 6 2>> sstacks_out_b1"	#creates a new -s entry for that sample input file
+	newstring = "sstacks -b 1 -c ../stacks/batch_1 -s ../stacks/" + linelist[0] + " -o ../stacks -p 6 2>> sstacks_out_b1"	#creates a new -s entry for that sample input file
 	newfile.write(newstring + "\n")		# appends new -s string to "filestring"
 samplefile.close()
 
@@ -59,7 +60,7 @@ newfile.write("\n\n")
 
 
 ##populations
-newfile.write("populations -b 1 -P ../stacks -M PopMap.txt -t 36 -r 0.75 -p 2 -m 10 --genepop --fasta 2>> populations_out_batch1")
+newfile.write("populations -b 1 -P ../stacks -M PopMap.txt -t 36 -r 0.75 -p 4 -m 10 --genepop --fasta 2>> populations_out_batch1")
 
 
 

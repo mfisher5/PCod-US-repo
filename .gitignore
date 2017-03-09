@@ -6,3 +6,9 @@ samplesT92/*.fq.gz
 samplesT92/*.fq
 stacks/*.genepop
 stacks/*.fa
+stacks/*.populations.txt
+stacks/*.fa
+stacks/*.haplotypes
+stacks/*.sumstats
+stacks/*.sumstats_summary
+stacks/*hapstats

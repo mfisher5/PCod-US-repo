@@ -12,3 +12,4 @@ stacks/*.haplotypes
 stacks/*.sumstats
 stacks/*.sumstats_summary
 stacks/*hapstats
+scripts/*.sam

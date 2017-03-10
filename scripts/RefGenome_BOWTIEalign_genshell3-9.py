@@ -25,9 +25,12 @@ shell = open("RefGenome_BOWTIEalign_" + batch + ".sh", "w")
 
 shell.write("#!/bin/bash\n\n")
 
+
+shell.write("
+
 for line in samples: 
 	sample = line.strip().split()[0]
-	newstr = "bowtie -q -v 3 -norc --sam " + path + " " + fastq_path + "/" + sample + " " + sample + ".sam"
+	newstr = "bowtie -q -v 3 -norc --sam " + path + " " + fastq_path + "/" + sample + ".fq " + sample + ".sam"
 	shell.write(newstr + "\n")
 
 samples.close()

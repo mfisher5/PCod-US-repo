@@ -1,20 +1,5 @@
 #!/bin/bash
 
-cd ../samplesT92
-echo "finding all gzipped 'tags' files"
-tags_file_array="$(find . -name '*.fq')"
-
-
-echo "unzipping all fastq files"
-for file in $tags_file_array
-do
-	echo $file
-	gzip -d $file
-	echo "file unzipped"
-done
-
-cd ../scripts
-
 bowtie -q -v 3 -norc --sam ../stacks/refgenome/batch_1_ref_genome ../samplesT92/KOD03_035.fq KOD03_035.sam
 bowtie -q -v 3 -norc --sam ../stacks/refgenome/batch_1_ref_genome ../samplesT92/KOD03_051.fq KOD03_051.sam
 bowtie -q -v 3 -norc --sam ../stacks/refgenome/batch_1_ref_genome ../samplesT92/KOD03_052.fq KOD03_052.sam

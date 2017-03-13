@@ -1,1 +1,5 @@
 [^.]*
+!populations_out_batch1_wgenome
+!sstacks_out_b1_wgenome
+!cstacks_out_b1_wgenome
+!pstacks_out_b1_wgenome

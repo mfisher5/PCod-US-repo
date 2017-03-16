@@ -64,7 +64,6 @@ for mystring in genotypes_file:		# Read in each line in the file as a string
 		Count_MissingGenotypesByLocus_PribIslands04 = float(PribIslands04.count('0000'))
 		NumberOf_PribIslands04_individuals = float(len(PribIslands04))
 		Percent_MissingData_PribIslands04 = float(Count_MissingGenotypesByLocus_PribIslands04/NumberOf_PribIslands04_individuals)
-		overall_percent_missingdata.append(Percent_MissingData_PribIslands04)
 #next pop
 		Count_MissingGenotypesByLocus_PugetSound12 = float(PugetSound12.count('0000'))
 		NumberOf_PugetSound12_individuals = float(len(PugetSound12))
@@ -87,7 +86,7 @@ for mystring in genotypes_file:		# Read in each line in the file as a string
 		overall_percent_missingdata.append(Percent_MissingData_UnimakPass03)
 
 #write loci to appropriate file
-		if all(i < 0.50 for i in overall_percent_missingdata):
+		if all(i < 0.20 for i in overall_percent_missingdata):
 			clean_output_file.write(mystring)
 		else: 
 			blacklisted_output_file.write(mystring)

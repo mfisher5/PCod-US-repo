@@ -22,7 +22,8 @@ MAF_header = 'Locus	Allele1_Kodiak03	Allele2_Kodiak03	Allele1_Adak06	Allele2_Ada
 output_freqs.write(MAF_header + '\n')
 blacklisted_MAF.write(MAF_header + '\n')
 
-
+count_bad_loci = 0
+count_good_loci = 0
 
 for mystring in genotypes_file:
 	if header:
@@ -127,20 +128,27 @@ for mystring in genotypes_file:
 		FrequencyOf_allele1_UnimakPass03 = ((2 * CountOf_homo1_UnimakPass03) + (CountOf_het_UnimakPass03)) / (total_alleles_UnimakPass03)
 		FrequencyOf_allele2_UnimakPass03 = ((2 * CountOf_homo2_UnimakPass03) + (CountOf_het_UnimakPass03)) / (total_alleles_UnimakPass03)
 
-		if ((FrequencyOf_allele1_Kodiak03 >= 0.05) or (FrequencyOf_allele1_Adak06 >= 0.05) or (FrequencyOf_allele1_WashCoast05 >= 0.05) or (FrequencyOf_allele1_HecStrait04 >= 0.05) or (FrequencyOf_allele1_PribIslands04 >= 0.05) or (FrequencyOf_allele1_PugetSound12 >= 0.05) or (FrequencyOf_allele1_GeorgiaStrait13 >= 0.05) or (FrequencyOf_allele1_PWSound12 >= 0.05) or (FrequencyOf_allele1_UnimakPass03 >= 0.05)) and ((FrequencyOf_allele2_Kodiak03 >= 0.05) or (FrequencyOf_allele2_Adak06 >= 0.05) or (FrequencyOf_allele2_WashCoast05 >= 0.05) or (FrequencyOf_allele2_HecStrait04 >= 0.05) or (FrequencyOf_allele2_PribIslands04 >= 0.05) or (FrequencyOf_allele2_PugetSound12 >= 0.05) or (FrequencyOf_allele2_GeorgiaStrait13 >= 0.05) or (FrequencyOf_allele2_PWSound12 >= 0.05) or (FrequencyOf_allele2_UnimakPass03 >= 0.05)):
+		if ((FrequencyOf_allele1_Kodiak03 >= 0.05) or (FrequencyOf_allele1_Adak06 >= 0.05) or (FrequencyOf_allele1_WashCoast05 >= 0.05) or (FrequencyOf_allele1_HecStrait04 >= 0.05) or (FrequencyOf_allele1_PugetSound12 >= 0.05) or (FrequencyOf_allele1_GeorgiaStrait13 >= 0.05) or (FrequencyOf_allele1_PWSound12 >= 0.05) or (FrequencyOf_allele1_UnimakPass03 >= 0.05)) and ((FrequencyOf_allele2_Kodiak03 >= 0.05) or (FrequencyOf_allele2_Adak06 >= 0.05) or (FrequencyOf_allele2_WashCoast05 >= 0.05) or (FrequencyOf_allele2_HecStrait04 >= 0.05) or (FrequencyOf_allele2_PugetSound12 >= 0.05) or (FrequencyOf_allele2_GeorgiaStrait13 >= 0.05) or (FrequencyOf_allele2_PWSound12 >= 0.05) or (FrequencyOf_allele2_UnimakPass03 >= 0.05)):
 			locus_freqs.append(locus+'\t'+str(FrequencyOf_allele1_Kodiak03) + '\t' + str(FrequencyOf_allele1_Adak06) + '\t' + str(FrequencyOf_allele1_WashCoast05) + '\t' + str(FrequencyOf_allele1_HecStrait04) + '\t' + str(FrequencyOf_allele1_PribIslands04) + '\t' + str(FrequencyOf_allele1_PugetSound12) + '\t' + str(FrequencyOf_allele1_GeorgiaStrait13) + '\t' + str(FrequencyOf_allele1_PWSound12) + '\t' + str(FrequencyOf_allele1_UnimakPass03))
 
 			locus_write = str(locus_freqs).replace('[','').replace(',','\t').replace(']', '').replace("'", '').replace(' ','').replace('\\n','').replace('\\t','\t')
 
 			output_freqs.write(locus_write + '\n')
 			filtered_genotypes.write(mystring)
+			count_good_loci = count_good_loci + 1
 		else:
 			bad_locus_freqs.append(locus+'\t'+ str(FrequencyOf_allele1_Kodiak03) + '\t' + str(FrequencyOf_allele1_Adak06) + '\t' + str(FrequencyOf_allele1_WashCoast05) + '\t' + str(FrequencyOf_allele1_HecStrait04) + '\t' + str(FrequencyOf_allele1_PribIslands04) + '\t' + str(FrequencyOf_allele1_PugetSound12) + '\t' + str(FrequencyOf_allele1_GeorgiaStrait13) + '\t' + str(FrequencyOf_allele1_PWSound12) + '\t' + str(FrequencyOf_allele1_UnimakPass03))
 			bad_locus_write = str(bad_locus_freqs).replace('[','').replace(',','\t').replace(']', '').replace("'", '').replace(' ','').replace('\\n','').replace('\\t','\t')
 
-			print bad_locus_write
+			count_bad_loci = count_bad_loci + 1
 			blacklisted_MAF.write(bad_locus_write + '\n')
 			blacklisted_genotypes.write(mystring)
+
+
+print "You filtered out: "
+print str(count_bad_loci) + " loci" 
+print "You retained: "
+print str(count_good_loci) + " loci"
 
 #close open files
 genotypes_file.close()

@@ -78,7 +78,7 @@ for pop in PopList:
 
 # start "for mystring in genotypes_file" loop
 
-script.write("for mystring in genotypes_file:\n\tif header:\n\t\tgenotypes_header = mystring\n\t\tfiltered_genotypes.write(genotypes_header)\n\t\tblacklisted_genotypes.write(genotypes_header)\n\t\theader = False\n\telse:\n\t\t" + r"stripped_string = mystring.strip('\n')" + "\n\t\tlocus = stripped_string.split(',')[0]\n\t\tlocus_freqs = []\n\t\tbad_locus_freqs = []\n") 
+script.write("count_bad_loci = 0\ncount_good_loci = 0\n\n\nfor mystring in genotypes_file:\n\tif header:\n\t\tgenotypes_header = mystring\n\t\tfiltered_genotypes.write(genotypes_header)\n\t\tblacklisted_genotypes.write(genotypes_header)\n\t\theader = False\n\telse:\n\t\t" + r"stripped_string = mystring.strip('\n')" + "\n\t\tlocus = stripped_string.split(',')[0]\n\t\tlocus_freqs = []\n\t\tbad_locus_freqs = []\n") 
 
 # generate a string that splits by columns for each population and write to script
 
@@ -142,7 +142,7 @@ script.write(")\n\n")
 
 script.write("\t\t\t" + r"locus_write = str(locus_freqs)." + replace_str + "\n")
 
-script.write("\t\t\t" + r"output_freqs.write(locus_write + '\n')" + "\n\t\t\tfiltered_genotypes.write(mystring)\n")
+script.write("\t\t\t" + r"output_freqs.write(locus_write + '\n')" + "\n\t\t\tfiltered_genotypes.write(mystring)\n\t\t\tcount_good_loci = count_good_loci + 1\n")
 script.write("\t\telse:\n")
 
 script.write("\t\t\t" + r"bad_locus_freqs.append(locus+'\t'+ ")
@@ -158,8 +158,8 @@ for pop in PopList:
 script.write(")\n")
 
 script.write("\t\t\t" + r"bad_locus_write = str(bad_locus_freqs)." + replace_str + "\n")
-script.write("\t\t\tprint bad_locus_write\n" + "\t\t\t" + r"blacklisted_MAF.write(bad_locus_write + '\n')" + "\n\t\t\tblacklisted_genotypes.write(mystring)\n\n")
+script.write("\t\t\tcount_bad_loci = count_bad_loci + 1\n" + "\t\t\t" + r"blacklisted_MAF.write(bad_locus_write + '\n')" + "\n\t\t\tblacklisted_genotypes.write(mystring)\n\n")
 
-script.write("#close open files\ngenotypes_file.close()\nblacklisted_genotypes.close()\nblacklisted_MAF.close()\nfiltered_genotypes.close()\noutput_freqs.close()")
+script.write("print 'You filtered out: '\nprint str(count_bad_loci) + ' loci'\nprint 'You retained: '\nprint str(count_good_loci) + ' loci'\n\n#close open files\ngenotypes_file.close()\nblacklisted_genotypes.close()\nblacklisted_MAF.close()\nfiltered_genotypes.close()\noutput_freqs.close()")
 popmap.close()
 script.close()

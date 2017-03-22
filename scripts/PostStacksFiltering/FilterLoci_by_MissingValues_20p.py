@@ -81,7 +81,7 @@ for mystring in genotypes_file:		# Read in each line in the file as a string
 		overall_percent_missingdata.append(Percent_MissingData_UnimakPass03)
 
 #write loci to appropriate file
-		if all(i < 0.50 for i in overall_percent_missingdata):
+		if all(i < 0.20 for i in overall_percent_missingdata):
 			clean_output_file.write(mystring)
 		else: 
 			blacklisted_output_file.write(mystring)

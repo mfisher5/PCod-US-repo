@@ -18,10 +18,14 @@ blacklisted_MAF = open(sys.argv[5],'w')
 header = True
 
 # This code creates a list of each allele for each population. This will be the headers for the file that outputs the allele frequencies. Modify as needed.
-MAF_header = 'Locus	Allele1_Kodiak03	Allele2_Kodiak03	Allele1_Adak06	Allele2_Adak06	Allele1_WashCoast05	Allele2_WashCoast05	Allele1_HecStrait04	Allele2_HecStrait04	Allele1_PribIslands04	Allele2_PribIslands04	Allele1_PugetSound12	Allele2_PugetSound12	Allele1_GeorgiaStrait13	Allele2_GeorgiaStrait13	Allele1_PWSound12	Allele2_PWSound12	Allele1_UnimakPass03	Allele2_UnimakPass03'
+MAF_header = 'Locus	Allele1_Kodiak03	Allele2_Kodiak03	Allele1_Adak06	Allele2_Adak06	Allele1_WashCoast05	Allele2_WashCoast05	Allele1_HecStrait04	Allele2_HecStrait04	Allele1_PugetSound12	Allele2_PugetSound12	Allele1_GeorgiaStrait13	Allele2_GeorgiaStrait13	Allele1_PWSound12	Allele2_PWSound12	Allele1_UnimakPass03	Allele2_UnimakPass03'
 output_freqs.write(MAF_header + '\n')
 blacklisted_MAF.write(MAF_header + '\n')
 
+
+
+count_bad_loci = 0
+count_good_loci = 0
 
 
 for mystring in genotypes_file:
@@ -35,15 +39,14 @@ for mystring in genotypes_file:
 		locus = stripped_string.split(',')[0]
 		locus_freqs = []
 		bad_locus_freqs = []
-		Kodiak03 = stripped_string.split(',')[1:49]
-		Adak06 = stripped_string.split(',')[49:97]
-		WashCoast05 = stripped_string.split(',')[97:145]
-		HecStrait04 = stripped_string.split(',')[145:193]
-		PribIslands04 = stripped_string.split(',')[193:241]
-		PugetSound12 = stripped_string.split(',')[241:289]
-		GeorgiaStrait13 = stripped_string.split(',')[289:306]
-		PWSound12 = stripped_string.split(',')[306:330]
-		UnimakPass03 = stripped_string.split(',')[330:378]
+		Kodiak03 = stripped_string.split(',')[1:42]
+		Adak06 = stripped_string.split(',')[42:73]
+		WashCoast05 = stripped_string.split(',')[73:106]
+		HecStrait04 = stripped_string.split(',')[106:146]
+		PugetSound12 = stripped_string.split(',')[146:187]
+		GeorgiaStrait13 = stripped_string.split(',')[187:199]
+		PWSound12 = stripped_string.split(',')[199:223]
+		UnimakPass03 = stripped_string.split(',')[223:265]
 
 
 		CountOf_homo1_Kodiak03 = float(Kodiak03.count('0101'))
@@ -64,11 +67,6 @@ for mystring in genotypes_file:
 		CountOf_homo1_HecStrait04 = float(HecStrait04.count('0101'))
 		CountOf_homo2_HecStrait04 = float(HecStrait04.count('0202'))
 		CountOf_het_HecStrait04 = float(HecStrait04.count('0102'))
-
-
-		CountOf_homo1_PribIslands04 = float(PribIslands04.count('0101'))
-		CountOf_homo2_PribIslands04 = float(PribIslands04.count('0202'))
-		CountOf_het_PribIslands04 = float(PribIslands04.count('0102'))
 
 
 		CountOf_homo1_PugetSound12 = float(PugetSound12.count('0101'))
@@ -107,10 +105,6 @@ for mystring in genotypes_file:
 		FrequencyOf_allele1_HecStrait04 = ((2 * CountOf_homo1_HecStrait04) + (CountOf_het_HecStrait04)) / (total_alleles_HecStrait04)
 		FrequencyOf_allele2_HecStrait04 = ((2 * CountOf_homo2_HecStrait04) + (CountOf_het_HecStrait04)) / (total_alleles_HecStrait04)
 
-		total_alleles_PribIslands04=2*(CountOf_homo1_PribIslands04 + CountOf_homo2_PribIslands04 + CountOf_het_PribIslands04 + 0.000000001)
-		FrequencyOf_allele1_PribIslands04 = ((2 * CountOf_homo1_PribIslands04) + (CountOf_het_PribIslands04)) / (total_alleles_PribIslands04)
-		FrequencyOf_allele2_PribIslands04 = ((2 * CountOf_homo2_PribIslands04) + (CountOf_het_PribIslands04)) / (total_alleles_PribIslands04)
-
 		total_alleles_PugetSound12=2*(CountOf_homo1_PugetSound12 + CountOf_homo2_PugetSound12 + CountOf_het_PugetSound12 + 0.000000001)
 		FrequencyOf_allele1_PugetSound12 = ((2 * CountOf_homo1_PugetSound12) + (CountOf_het_PugetSound12)) / (total_alleles_PugetSound12)
 		FrequencyOf_allele2_PugetSound12 = ((2 * CountOf_homo2_PugetSound12) + (CountOf_het_PugetSound12)) / (total_alleles_PugetSound12)
@@ -127,20 +121,26 @@ for mystring in genotypes_file:
 		FrequencyOf_allele1_UnimakPass03 = ((2 * CountOf_homo1_UnimakPass03) + (CountOf_het_UnimakPass03)) / (total_alleles_UnimakPass03)
 		FrequencyOf_allele2_UnimakPass03 = ((2 * CountOf_homo2_UnimakPass03) + (CountOf_het_UnimakPass03)) / (total_alleles_UnimakPass03)
 
-		if ((FrequencyOf_allele1_Kodiak03 >= 0.05) or (FrequencyOf_allele1_Adak06 >= 0.05) or (FrequencyOf_allele1_WashCoast05 >= 0.05) or (FrequencyOf_allele1_HecStrait04 >= 0.05) or (FrequencyOf_allele1_PribIslands04 >= 0.05) or (FrequencyOf_allele1_PugetSound12 >= 0.05) or (FrequencyOf_allele1_GeorgiaStrait13 >= 0.05) or (FrequencyOf_allele1_PWSound12 >= 0.05) or (FrequencyOf_allele1_UnimakPass03 >= 0.05)) and ((FrequencyOf_allele2_Kodiak03 >= 0.05) or (FrequencyOf_allele2_Adak06 >= 0.05) or (FrequencyOf_allele2_WashCoast05 >= 0.05) or (FrequencyOf_allele2_HecStrait04 >= 0.05) or (FrequencyOf_allele2_PribIslands04 >= 0.05) or (FrequencyOf_allele2_PugetSound12 >= 0.05) or (FrequencyOf_allele2_GeorgiaStrait13 >= 0.05) or (FrequencyOf_allele2_PWSound12 >= 0.05) or (FrequencyOf_allele2_UnimakPass03 >= 0.05)):
-			locus_freqs.append(locus+'\t'+str(FrequencyOf_allele1_Kodiak03) + '\t' + str(FrequencyOf_allele1_Adak06) + '\t' + str(FrequencyOf_allele1_WashCoast05) + '\t' + str(FrequencyOf_allele1_HecStrait04) + '\t' + str(FrequencyOf_allele1_PribIslands04) + '\t' + str(FrequencyOf_allele1_PugetSound12) + '\t' + str(FrequencyOf_allele1_GeorgiaStrait13) + '\t' + str(FrequencyOf_allele1_PWSound12) + '\t' + str(FrequencyOf_allele1_UnimakPass03))
+		if ((FrequencyOf_allele1_Kodiak03 >= 0.05) or (FrequencyOf_allele1_Adak06 >= 0.05) or (FrequencyOf_allele1_WashCoast05 >= 0.05) or (FrequencyOf_allele1_HecStrait04 >= 0.05) or (FrequencyOf_allele1_PugetSound12 >= 0.05) or (FrequencyOf_allele1_GeorgiaStrait13 >= 0.05) or (FrequencyOf_allele1_PWSound12 >= 0.05) or (FrequencyOf_allele1_UnimakPass03 >= 0.05)) and ((FrequencyOf_allele2_Kodiak03 >= 0.05) or (FrequencyOf_allele2_Adak06 >= 0.05) or (FrequencyOf_allele2_WashCoast05 >= 0.05) or (FrequencyOf_allele2_HecStrait04 >= 0.05) or (FrequencyOf_allele2_PugetSound12 >= 0.05) or (FrequencyOf_allele2_GeorgiaStrait13 >= 0.05) or (FrequencyOf_allele2_PWSound12 >= 0.05) or (FrequencyOf_allele2_UnimakPass03 >= 0.05)):
+			locus_freqs.append(locus+'\t'+str(FrequencyOf_allele1_Kodiak03) + '\t' + str(FrequencyOf_allele1_Adak06) + '\t' + str(FrequencyOf_allele1_WashCoast05) + '\t' + str(FrequencyOf_allele1_HecStrait04) + '\t' + str(FrequencyOf_allele1_PugetSound12) + '\t' + str(FrequencyOf_allele1_GeorgiaStrait13) + '\t' + str(FrequencyOf_allele1_PWSound12) + '\t' + str(FrequencyOf_allele1_UnimakPass03))
 
 			locus_write = str(locus_freqs).replace('[','').replace(',','\t').replace(']', '').replace("'", '').replace(' ','').replace('\\n','').replace('\\t','\t')
 
 			output_freqs.write(locus_write + '\n')
 			filtered_genotypes.write(mystring)
+			count_good_loci = count_good_loci + 1
 		else:
-			bad_locus_freqs.append(locus+'\t'+ str(FrequencyOf_allele1_Kodiak03) + '\t' + str(FrequencyOf_allele1_Adak06) + '\t' + str(FrequencyOf_allele1_WashCoast05) + '\t' + str(FrequencyOf_allele1_HecStrait04) + '\t' + str(FrequencyOf_allele1_PribIslands04) + '\t' + str(FrequencyOf_allele1_PugetSound12) + '\t' + str(FrequencyOf_allele1_GeorgiaStrait13) + '\t' + str(FrequencyOf_allele1_PWSound12) + '\t' + str(FrequencyOf_allele1_UnimakPass03))
+			bad_locus_freqs.append(locus+'\t'+ str(FrequencyOf_allele1_Kodiak03) + '\t' + str(FrequencyOf_allele1_Adak06) + '\t' + str(FrequencyOf_allele1_WashCoast05) + '\t' + str(FrequencyOf_allele1_HecStrait04) + '\t' + str(FrequencyOf_allele1_PugetSound12) + '\t' + str(FrequencyOf_allele1_GeorgiaStrait13) + '\t' + str(FrequencyOf_allele1_PWSound12) + '\t' + str(FrequencyOf_allele1_UnimakPass03))
 			bad_locus_write = str(bad_locus_freqs).replace('[','').replace(',','\t').replace(']', '').replace("'", '').replace(' ','').replace('\\n','').replace('\\t','\t')
 
-			print bad_locus_write
+			count_bad_loci = count_bad_loci + 1
 			blacklisted_MAF.write(bad_locus_write + '\n')
 			blacklisted_genotypes.write(mystring)
+
+print 'You filtered out: '
+print str(count_bad_loci) + ' loci'
+print 'You retained: '
+print str(count_good_loci) + ' loci'
 
 #close open files
 genotypes_file.close()

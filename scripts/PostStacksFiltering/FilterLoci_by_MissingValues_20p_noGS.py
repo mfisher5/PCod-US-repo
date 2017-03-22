@@ -68,7 +68,6 @@ for mystring in genotypes_file:		# Read in each line in the file as a string
 		Count_MissingGenotypesByLocus_GeorgiaStrait13 = float(GeorgiaStrait13.count('0000'))
 		NumberOf_GeorgiaStrait13_individuals = float(len(GeorgiaStrait13))
 		Percent_MissingData_GeorgiaStrait13 = float(Count_MissingGenotypesByLocus_GeorgiaStrait13/NumberOf_GeorgiaStrait13_individuals)
-		overall_percent_missingdata.append(Percent_MissingData_GeorgiaStrait13)
 #next pop
 		Count_MissingGenotypesByLocus_PWSound12 = float(PWSound12.count('0000'))
 		NumberOf_PWSound12_individuals = float(len(PWSound12))
@@ -81,7 +80,7 @@ for mystring in genotypes_file:		# Read in each line in the file as a string
 		overall_percent_missingdata.append(Percent_MissingData_UnimakPass03)
 
 #write loci to appropriate file
-		if all(i < 0.50 for i in overall_percent_missingdata):
+		if all(i < 0.20 for i in overall_percent_missingdata):
 			clean_output_file.write(mystring)
 		else: 
 			blacklisted_output_file.write(mystring)
@@ -90,3 +89,5 @@ for mystring in genotypes_file:		# Read in each line in the file as a string
 n_loci = str(count - 1)
 print 'processed ' + n_loci + ' loci'
 print 'Number of loci removed: ' + str(bad_count)
+retained_loci = float(n_loci) - bad_count
+print "Number of loci retained: " + str(retained_loci)

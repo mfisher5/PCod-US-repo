@@ -15,7 +15,7 @@ for(i in seq(from = 2, to = ncol(genepop)-1)) {
 }
 
 hist(missing_props, main = "Missing Data per Locus", xlab = "Proportion Individuals Missing Genotypes")
-length(which(missing_props > 0.5))
+length(which(missing_props > 0.2))
 length(missing_props)
 
 
@@ -29,14 +29,15 @@ for(i in seq(from = 1, to = total_individs)) {
 }
 
 hist(missing_props2, main = "Missing Data per Individual", xlab = "Proportion Loci Missing Genotypes")
-length(which(missing_props2 > 0.5))
+length(which(missing_props2 > 0.2))
 length(missing_props2)
 
 
 
-#-- Missing Data per Locus when individuals missing > 90% of genotypes are removed
+#-- Missing Data per Locus when individuals missing > 20% of genotypes are removed
 
 gte_90_indices <- which(missing_props2 >= 0.20) #which individuals are missing more than 90% of data
+length(gte_90_indices)
 n_individs <- total_individs- length(gte_90_indices) # new total number of individuals
 
 loci_indices <- seq(2,total_loci) #create a list of loci indices
@@ -46,14 +47,11 @@ for(i in loci_indices){
   genotypes <- genepop[,i]
   new_genotypes <- genotypes[-gte_90_indices] #remove the genotypes that belong to the individuals missing > 90% of their data
   p_missing <- (length(which(new_genotypes == "-")))/n_individs
-  if(p_missing > 0.20){
-    print(genotypes[1])
-  }
   missing_props_lte90 <- c(missing_props_lte90, p_missing)
 }
-length(which(missing_props_lte90 <= 0.2))
+length(which(missing_props_lte90 > 0.2))
 hist(missing_props_lte90, main = "Missing Data per Locus (Individs <20% MD)", xlab = "Proportion Individuals Missing Genotypes")
-length(missing_props_lte20)
+length(missing_props_lte90)
 missing_props_lte90
 
 
@@ -79,5 +77,5 @@ for(i in seq(from = 1, to = total_individs)) {
   }
   missing_props2 <- c(missing_props2, p_missing)
 }
-print remove_individs
-
+print(remove_individs)
+length(remove_individs)

@@ -13,7 +13,9 @@ genepop = open(sys.argv[1], "r")
 
 ##### original ###########
 #read row of loci names into a string
-Filestring = genepop.read()
+header = genepop.readline()
+print header
+Filestring = genepop.readline()
 genepop.close()
 
 lociList = Filestring.split(",")
@@ -37,7 +39,8 @@ print "With the NEW script, used in the pipeline:"
 genepop = open(sys.argv[1], "r")
 LociList = []
 
-print genepop.readline()
+header = genepop.readline()
+print header
 LociList = genepop.readline().strip()
 
 genepop.close()

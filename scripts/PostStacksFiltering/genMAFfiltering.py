@@ -54,7 +54,7 @@ script.write("# This code creates a list of each allele for each population. Thi
 
 MAFhead = "Locus"
 for pop in PopList: 
-	newstr = "\t" + "Allele1_" + pop + "\t" + "Allele2_" + pop
+	newstr = "\t" + "Allele1_" + pop
 	MAFhead = MAFhead + newstr
 
 script.write("MAF_header = '" + MAFhead + "'\n")

@@ -33,7 +33,6 @@ parser.add_argument("-d", "--denominator", help="use 2 if counting a FASTA file 
                                                  or 4 if counting a FASTQ file")
 args = parser.parse_args()
 
-
 output_file = open(args.output, 'w')
 
 
@@ -57,7 +56,7 @@ def countFastq(filename):
                                        stdout=subprocess.PIPE, shell=True)
     (fastq_out, fastq_err) = num_lines_fastq.communicate()
     fastq_out = float(fastq_out.split()[0])/denominator # divide by 2 or 4 depending 
-	                                                 # on file type
+                                                        # on file type
 
     return fastq_out
 
@@ -95,9 +94,9 @@ output_file.write('sample num_seq prop_het\n')
 if args.list:
 
     list_file = open(args.list, 'r')
+
     for line in list_file:
         sample_name, fastq_file = line.split()
-
         # count the number of lines in the FASTQ file
         tmp_num_lines = countFastq(fastq_file)
 
@@ -105,9 +104,11 @@ if args.list:
 
         tmp_proportion_het = countHet(sample_name)
 
-        tmp_output = sample_name + ' ' + str(tmp_num_lines) + ' ' + str(tmp_proportion_het) + '\n'
-
-	print tmp_output
+        tmp_output = sample_name + ' ' + str(tmp_num_lines) + ' ' + \
+                     str(tmp_proportion_het) + '\n'
+	
+	print sample_name	
+	print tmp_num_lines, "\t", tmp_proportion_het
         output_file.write(tmp_output)
 
 

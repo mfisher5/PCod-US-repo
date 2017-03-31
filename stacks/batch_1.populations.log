@@ -1,5 +1,5 @@
 populations -b 1 -P ../stacks -M PopMap.txt -t 36 -r 0.75 -p 4 -m 10 --genepop --fasta
-populations version 1.44 executed 2017-03-08 13:16:59
+populations version 1.44 executed 2017-03-30 11:59:37
 
 # Distribution of population loci.
 # Distribution of valid loci matched to catalog locus.

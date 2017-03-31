@@ -13,3 +13,8 @@ stacks/*.sumstats
 stacks/*.sumstats_summary
 stacks/*hapstats
 scripts/*.sam
+stacks/batch_1.CorrectedGenotypes*
+stacks/batch_1.filteredIndivids*
+stacks/batch_1_heterozygosity.txt
+stacks/populations_first_run/*
+populations_first_run/*

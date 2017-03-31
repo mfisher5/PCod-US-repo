@@ -18,7 +18,7 @@ blacklisted_MAF = open(sys.argv[5],'w')
 header = True
 
 # This code creates a list of each allele for each population. This will be the headers for the file that outputs the allele frequencies. Modify as needed.
-MAF_header = 'Locus	Allele1_Kodiak03	Allele2_Kodiak03	Allele1_Adak06	Allele2_Adak06	Allele1_WashCoast05	Allele2_WashCoast05	Allele1_HecStrait04	Allele2_HecStrait04	Allele1_PugetSound12	Allele2_PugetSound12	Allele1_GeorgiaStrait13	Allele2_GeorgiaStrait13	Allele1_PWSound12	Allele2_PWSound12	Allele1_UnimakPass03	Allele2_UnimakPass03'
+MAF_header = 'Locus	Allele1_Kodiak03	Allele1_Adak06	Allele1_WashCoast05	Allele1_HecStrait04	Allele1_PugetSound12	Allele1_GeorgiaStrait13	Allele1_PWSound12	Allele1_UnimakPass03'
 output_freqs.write(MAF_header + '\n')
 blacklisted_MAF.write(MAF_header + '\n')
 

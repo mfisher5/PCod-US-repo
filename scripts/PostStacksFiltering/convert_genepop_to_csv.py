@@ -12,8 +12,8 @@ import sys
 stacksDIRECT = sys.argv[1]
 BATCH = sys.argv[2]
 
-genepop = open(stacksDIRECT + "/batch_" + BATCH + ".CorrectedGenotypes_biallelic_TRANSPOSED.filteredIndivids.txt", "r") 
-new_genepop = open(stacksDIRECT + "/batch_" + BATCH + ".CorrectedGenotypes_biallelic_TRANSPOSED.filteredIndivids.csv", "w") 
+genepop = open(stacksDIRECT + "/batch_" + BATCH + ".CorrectedGenotypes_biallelic_TRANSPOSED.txt", "r") 
+new_genepop = open(stacksDIRECT + "/batch_" + BATCH + ".CorrectedGenotypes_biallelic_TRANSPOSED.csv", "w") 
 
 while True: 
 	linestr = genepop.readline()

@@ -18,3 +18,7 @@ stacks/batch_1.filteredIndivids*
 stacks/batch_1_heterozygosity.txt
 stacks/populations_first_run/*
 populations_first_run/*
+analyses/*.txt.P
+analyses/*.txt
+analyses/genepop/*.txt
+analyses/genepop/batch_1_filteredIndivids_filteredMAF*

@@ -22,3 +22,5 @@ analyses/*.txt.P
 analyses/*.txt
 analyses/genepop/*.txt
 analyses/genepop/batch_1_filteredIndivids_filteredMAF*
+stacks_b2/*
+stacks.zip

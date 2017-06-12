@@ -6,6 +6,7 @@
 1	# Minimum coverage required for Marine's script, preparing_file_for_correcting_genotypes.py (default = 1)
 	# Absolute path to prep_for_extraFilters.py 
 	# Absolute path to preparing_file_for_correcting_genotypes.py
+	# Absolute path to gunzip_string.txt **If there are spaces in file path, do not put '\'
 	# Absolute path to genotypes_verif_v2_no_ref_takeARGS (Marine's script, edited to take command line args) 
 	# Absolute path to genepop_conversion_corrected.py
 	# Absolute path to add_sample_to_genepop.py

@@ -61,20 +61,10 @@ for mystring in genotypes_file:		# Read in each line in the file as a string
 		Percent_MissingData_HecStrait04 = float(Count_MissingGenotypesByLocus_HecStrait04/NumberOf_HecStrait04_individuals)
 		overall_percent_missingdata.append(Percent_MissingData_HecStrait04)
 #next pop
-		Count_MissingGenotypesByLocus_PribIslands04 = float(PribIslands04.count('0000'))
-		NumberOf_PribIslands04_individuals = float(len(PribIslands04))
-		Percent_MissingData_PribIslands04 = float(Count_MissingGenotypesByLocus_PribIslands04/NumberOf_PribIslands04_individuals)
-		overall_percent_missingdata.append(Percent_MissingData_PribIslands04)
-#next pop
 		Count_MissingGenotypesByLocus_PugetSound12 = float(PugetSound12.count('0000'))
 		NumberOf_PugetSound12_individuals = float(len(PugetSound12))
 		Percent_MissingData_PugetSound12 = float(Count_MissingGenotypesByLocus_PugetSound12/NumberOf_PugetSound12_individuals)
 		overall_percent_missingdata.append(Percent_MissingData_PugetSound12)
-#next pop
-		Count_MissingGenotypesByLocus_GeorgiaStrait13 = float(GeorgiaStrait13.count('0000'))
-		NumberOf_GeorgiaStrait13_individuals = float(len(GeorgiaStrait13))
-		Percent_MissingData_GeorgiaStrait13 = float(Count_MissingGenotypesByLocus_GeorgiaStrait13/NumberOf_GeorgiaStrait13_individuals)
-		overall_percent_missingdata.append(Percent_MissingData_GeorgiaStrait13)
 #next pop
 		Count_MissingGenotypesByLocus_PWSound12 = float(PWSound12.count('0000'))
 		NumberOf_PWSound12_individuals = float(len(PWSound12))
@@ -87,7 +77,7 @@ for mystring in genotypes_file:		# Read in each line in the file as a string
 		overall_percent_missingdata.append(Percent_MissingData_UnimakPass03)
 
 #write loci to appropriate file
-		if all(i < 0.50 for i in overall_percent_missingdata):
+		if all(i < 0.20 for i in overall_percent_missingdata):
 			clean_output_file.write(mystring)
 		else: 
 			blacklisted_output_file.write(mystring)

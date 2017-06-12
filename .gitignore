@@ -25,3 +25,4 @@ analyses/genepop/batch_1_filteredIndivids_filteredMAF*
 stacks_b2/*
 stacks.zip
 analyses/stacks_pipeline_visuals/*.xlsx
+stacks_b2_wgenome/*

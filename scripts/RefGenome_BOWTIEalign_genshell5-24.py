@@ -11,7 +11,21 @@
 ##---- ARG3 = relative path to stacks fastq files, output from process_radtags
 ##---- ARG4 = batch #
 
-## Change whether fastq files are gzipped on line 31
+## IF fastq files are gzipped, you need to paste in the following code into the shell file: 
+#cd ../samplesT92
+#echo "finding all gzipped 'tags' files"
+#tags_file_array="$(find . -name '*.fq')"
+
+
+#echo "unzipping all fastq files"
+#for file in $tags_file_array
+#do
+#	echo $file
+#	gzip -d $file
+#	echo "file unzipped"
+#done
+
+#cd ../scripts
 
 ############################################################################
 
@@ -28,9 +42,10 @@ shell = open("RefGenome_BOWTIEalign_batch" + batch + ".sh", "w")
 shell.write("#!/bin/bash\n\n")
 
 
+
 for line in samples: 
 	sample = line.strip().split()[0]
-	newstr = "bowtie -q -v 3 -norc --sam " + path + " " + fastq_path + "/" + sample + ".fq.gz " + sample + ".sam"
+	newstr = "bowtie -q -v 3 -norc --sam " + path + " " + fastq_path + "/" + sample + ".fq " + sample + ".sam"
 	shell.write(newstr + "\n")
 
 samples.close()

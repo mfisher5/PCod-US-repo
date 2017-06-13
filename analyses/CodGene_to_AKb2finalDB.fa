@@ -1,0 +1,42 @@
+BLASTN 2.2.31+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: AKb2_for_KORblast.fa
+           2,945 sequences; 270,940 total letters
+
+
+
+Query= 1
+
+Length=95
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 17681780
+
+
+  Database: AKb2_for_KORblast.fa
+    Posted date:  Jun 13, 2017  2:36 PM
+  Number of letters in database: 270,940
+  Number of sequences in database:  2,945
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5

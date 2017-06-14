@@ -26,3 +26,6 @@ stacks_b2/*
 stacks.zip
 analyses/stacks_pipeline_visuals/*.xlsx
 stacks_b2_wgenome/*
+analyses/batch_2*
+analyses/batch2*
+analyses/genepop/batch_2*

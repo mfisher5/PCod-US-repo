@@ -52,7 +52,7 @@ def countFastq(filename):
     if args.denominator == '2':
         denominator = 2
 
-    num_lines_fastq = subprocess.Popen(["zcat " + filename + " | wc -l"], \
+    num_lines_fastq = subprocess.Popen(["cat " + filename + " | wc -l"], \
                                        stdout=subprocess.PIPE, shell=True)
     (fastq_out, fastq_err) = num_lines_fastq.communicate()
     fastq_out = float(fastq_out.split()[0])/denominator # divide by 2 or 4 depending 

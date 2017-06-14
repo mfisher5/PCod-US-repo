@@ -8,6 +8,7 @@
 # ---------------------------------------------------------------------------------
 
 # Import these libraries
+install.packages("hierfstat")
 library(adegenet)
 library(hierfstat)
 
@@ -18,7 +19,7 @@ setwd("D:/Pacific cod/DataAnalysis/PCod-US-repo/analyses")
 # Read in your data as a genepop file, with a ".gen" file extension
 # Need comma after each individual, can be space or tab delimited
 # Specify how many characters code each allele with ncode
-my_data <-read.genepop("../stacks_wgenome/batch_1.filteredIndivids.filteredMAF_filteredLoci20p.gen", ncode = 2)
+my_data <-read.genepop("../stacks_b2_wgenome/batch_2.filteredMAF_filteredLoci_filteredIndivids_filteredHWE.gen", ncode = 2)
 
 # To retreive useful data summaries
 (summary(my_data))

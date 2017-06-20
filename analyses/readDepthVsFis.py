@@ -88,10 +88,10 @@ fis_file.close()
 output_file = open(args.output, 'w')
 output_file.write('pop depth num_samples avg_depth fis\n')
 
-for pop in sample_list_file.keys(): # keys are population names
-    for locus in sample_list_file[pop]: # keys here are loci
-        tmp_depth = sample_list_file[pop][locus][0]
-        tmp_num_samples = sample_list_file[pop][locus][1]
+for pop in dict_read_depth.keys(): # keys are population names
+    for locus in dict_read_depth[pop]: # keys here are loci
+        tmp_depth = dict_read_depth[pop][locus][0]
+        tmp_num_samples = dict_read_depth[pop][locus][1]
         tmp_fis = fis_values[pop][locus]
         tmp_output = pop + ' ' + tmp_depth + ' ' + tmp_num_samples + ' ' + str(float(tmp_depth)/tmp_num_samples) + ' ' + tmp_fis + '\n'
         output_file.write(tmp_output)

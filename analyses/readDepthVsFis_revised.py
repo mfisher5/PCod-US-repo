@@ -57,6 +57,9 @@ for line in sample_list_file:
 sample_list_file.close()
 
 
+print '\n'
+
+
 
 
 ################################
@@ -74,7 +77,7 @@ for line in fis_file:
         tmp_fis = line.split()[4] # this is Weir and Cockerham Fis
 
         if tmp_pop in fis_values.keys():
-            fis_values[tmp_locus] = tmp_fis
+            fis_values[tmp_pop][tmp_locus] = tmp_fis
         else:
             fis_values[tmp_pop] = {}                
             fis_values[tmp_pop][tmp_locus] = tmp_fis
@@ -82,19 +85,19 @@ for line in fis_file:
 fis_file.close()
 
 
-
 ################################
 # Process counts at each locus
 output_file = open(args.output, 'w')
-output_file.write('pop depth num_samples avg_depth fis\n')
+output_file.write('pop locus depth num_samples avg_depth fis\n')
 
 for pop in dict_read_depth.keys(): # keys are population names
     for locus in dict_read_depth[pop].keys(): # keys here are loci
-        tmp_depth = dict_read_depth[pop][locus][0]
-        tmp_num_samples = dict_read_depth[pop][locus][1]
-        tmp_fis = fis_values[pop][locus]
-        tmp_output = pop + ' ' + tmp_depth + ' ' + tmp_num_samples + ' ' + str(float(tmp_depth)/tmp_num_samples) + ' ' + tmp_fis + '\n'
-        output_file.write(tmp_output)
+        if locus in fis_values[pop].keys(): 
+            tmp_depth = dict_read_depth[pop][locus][0]
+            tmp_num_samples = dict_read_depth[pop][locus][1]
+            tmp_fis = fis_values[pop][locus]
+            tmp_output = pop + ' ' + locus + ' ' + str(tmp_depth) + ' ' + str(tmp_num_samples) + ' ' + str(float(tmp_depth)/tmp_num_samples) + ' ' + tmp_fis + '\n'
+            output_file.write(tmp_output)
 
 output_file.close()
 
@@ -102,10 +105,12 @@ output_file.close()
 
 
 '''
+
 F2_progeny_1174 pop1
 F2_progeny_1176 pop1
 F2_progeny_1177 pop2
 F2_progeny_1180 pop2
+
 '''
 
 

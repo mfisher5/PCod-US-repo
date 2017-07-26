@@ -3,6 +3,7 @@
 ## ARGUMENTS: 
 #ARG 1 - genepop file from `populations`. 
 #ARG 2 - the .catalog file output from `cstacks` (unzipped)
+#ARG 3 - the name for the new fasta file
 
 
 import sys
@@ -52,6 +53,8 @@ catalog.close()
 
 #open a new file to write into 
 print "Writing new fasta file..."
-newfile = open("AK_for_KORblast.fa", "w")
+newfile = open(sys.argv[3], "w")
 newfile.write(fasta)
 newfile.close()
+
+print "Done."
